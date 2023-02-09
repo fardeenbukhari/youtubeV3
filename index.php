@@ -1,4 +1,5 @@
 <?php
+$token = "";
 $cid = $_GET['channel'];
 header('Content-Type: text/html');
 
@@ -9,7 +10,7 @@ if(isset($_GET['quantity'])){
 }
 
 // From URL to get webpage contents.
-$url = "https://www.googleapis.com/youtube/v3/activities?part=contentDetails&maxResults={$qty}&channelId={$cid}&key=AIzaSyDydYzu_oJMYoDHTqaShxitS1TYZk-LBMs";
+$url = "https://www.googleapis.com/youtube/v3/activities?part=contentDetails&maxResults={$qty}&channelId={$cid}&key={$token}";
 // Initialize a CURL session.
 $ch = curl_init();
 
