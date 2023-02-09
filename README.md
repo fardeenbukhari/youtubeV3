@@ -1,2 +1,6 @@
 # youtubeV3
-This is a youtube v3 based api it requires authentication token from your google developers panel i have added some custom parameters too
+This is a youtube version 3 api it requires authentication token from your google developers panel i have added some custom parameters.
+
+🔴 channel : youtube channel id
+🔴 quantity : number of results
+
